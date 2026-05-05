@@ -5,6 +5,8 @@ export default function Hero() {
     <section className={styles.hero} id="about">
       <div className={styles.noise} />
       <div className={styles.grid} />
+      <div className={styles.blob1} />
+      <div className={styles.blob2} />
 
       <div className={styles.content}>
         <div className={styles.badge}>
