@@ -45,7 +45,6 @@
   border: 1px solid rgba(108, 71, 255, 0.1);
   box-shadow: 0 4px 20px rgba(108, 71, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: perspective(1000px) rotateX(0deg);
 }
 
 .card:hover {
@@ -70,4 +69,65 @@
 .name {
   font-family: var(--font-display);
   font-size: 1.4rem;
-  font-weight:
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+  transition: color 0.2s;
+}
+
+.card:hover .name {
+  color: #6c47ff;
+}
+
+.desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 560px;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(108, 71, 255, 0.08);
+  border: 1px solid rgba(108, 71, 255, 0.15);
+  color: #6c47ff;
+  padding: 0.25rem 0.65rem;
+  border-radius: 50px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #6c47ff;
+  opacity: 0.3;
+  transition: opacity 0.2s, transform 0.2s;
+  margin-top: 2px;
+}
+
+.card:hover .arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  .card {
+    grid-template-columns: 1fr auto;
+  }
+  .num {
+    display: none;
+  }
+}
