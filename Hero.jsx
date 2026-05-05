@@ -15,9 +15,9 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.heading}>
-          <span className={styles.line1}>Creative</span>
-          <span className={styles.line2}>Developer</span>
-          <span className={styles.line3}>& Designer</span>
+          <span className={styles.line1}>Hi, I'm Riya</span>
+          <span className={styles.line2}>Web Developer</span>
+          <span className={styles.line3}>& React Expert</span>
         </h1>
 
         <p className={styles.sub}>
