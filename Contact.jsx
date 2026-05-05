@@ -15,17 +15,17 @@ export default function Contact() {
         </p>
 
         <div className={styles.links}>
-          <a href="mailto:your@email.com" className={styles.link}>
+          <a href="mailto:yadavriya1329@gmail.com" className={styles.link}>
             <span>Email</span>
-            <span className={styles.val}>your@email.com ↗</span>
+            <span className={styles.val}>yadavriya1329@gmail.com ↗</span>
           </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className={styles.link}>
+          <a href="https://github.com/Riyayadav12345" target="_blank" rel="noreferrer" className={styles.link}>
             <span>GitHub</span>
-            <span className={styles.val}>github.com/yourusername ↗</span>
+            <span className={styles.val}>github.com/Riyayadav12345 ↗</span>
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className={styles.link}>
+          <a href="https://www.linkedin.com/in/riya-yadav-1059ba256" target="_blank" rel="noreferrer" className={styles.link}>
             <span>LinkedIn</span>
-            <span className={styles.val}>linkedin.com/in/yourusername ↗</span>
+            <span className={styles.val}>linkedin.com/in/riya-yadav-1059ba256 ↗</span>
           </a>
         </div>
       </div>
