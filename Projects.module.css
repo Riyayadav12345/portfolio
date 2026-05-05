@@ -1,6 +1,7 @@
 .section {
   padding: 6rem 4rem;
   border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, #f8f5f0 0%, #ede8ff20 100%);
 }
 
 .header {
@@ -11,7 +12,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #6c47ff;
   margin-bottom: 0.5rem;
 }
 
@@ -20,12 +21,16 @@
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #1a1a2e, #6c47ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 1.5rem;
 }
 
 .card {
@@ -33,16 +38,20 @@
   grid-template-columns: 80px 1fr auto;
   align-items: start;
   gap: 2rem;
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--border);
-  transition: background 0.2s;
-  border-radius: 4px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(108, 71, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(108, 71, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: perspective(1000px) rotateX(0deg);
 }
 
 .card:hover {
-  background: var(--surface);
+  transform: perspective(1000px) rotateX(2deg) translateY(-6px);
+  box-shadow: 0 20px 60px rgba(108, 71, 255, 0.15);
+  border-color: rgba(108, 71, 255, 0.3);
 }
 
 .num {
@@ -51,6 +60,7 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   margin-top: 4px;
+  color: #6c47ff;
 }
 
 .body {
@@ -60,62 +70,4 @@
 .name {
   font-family: var(--font-display);
   font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
-  transition: color 0.2s;
-}
-
-.card:hover .name {
-  color: var(--accent);
-}
-
-.desc {
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  max-width: 560px;
-  margin-bottom: 1rem;
-  font-weight: 300;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  padding: 0.25rem 0.65rem;
-  border-radius: 2px;
-}
-
-.arrow {
-  font-size: 1.5rem;
-  color: var(--muted);
-  transition: color 0.2s, transform 0.2s;
-  margin-top: 2px;
-}
-
-.card:hover .arrow {
-  color: var(--accent);
-  transform: translate(2px, -2px);
-}
-
-@media (max-width: 768px) {
-  .section {
-    padding: 4rem 1.5rem;
-  }
-  .card {
-    grid-template-columns: 1fr auto;
-  }
-  .num {
-    display: none;
-  }
-}
+  font-weight:
